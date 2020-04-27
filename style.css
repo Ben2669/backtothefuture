@@ -1,0 +1,21 @@
+.row {
+    height: 16vw;
+}
+
+.half {
+    height: 8vw;
+}
+
+.separation {
+    height: 0.5vw;
+}
+
+.container-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-date {
+    font-size: 2rem;
+}
