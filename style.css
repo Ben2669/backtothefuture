@@ -1,7 +1,6 @@
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
 main {
@@ -32,6 +31,9 @@ section {
     width: 15%;
     background-color: crimson;
     color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Roboto Thin", sans-serif;
 }
 
 .column-bis {
@@ -39,6 +41,8 @@ section {
     background-color: black;
     color: coral;
     border: solid 1px lightgrey;
+    font-size: 3rem;
+    text-align: center;
 }
 
 .large {
@@ -58,6 +62,8 @@ section {
     width: 60%;
     background-color: black;
     color: white;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .separate {
