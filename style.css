@@ -1,21 +1,70 @@
-.row {
-    height: 16vw;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 85%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.line {
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.double {
+    height: 40%;
+}
+
+.column {
+    width: 15%;
+    background-color: crimson;
+    color: white;
+}
+
+.column-bis {
+    width: 15%;
+    background-color: black;
+    color: coral;
+    border: solid 1px lightgrey;
+}
+
+.large {
+    width: 20%;
 }
 
 .half {
-    height: 8vw;
+    width: 7%;
 }
 
-.separation {
-    height: 0.5vw;
+.spec {
+    background-color: transparent;
+    border: none;
 }
 
-.container-date {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.timesection {
+    width: 60%;
+    background-color: black;
+    color: white;
 }
 
-.content-date {
-    font-size: 2rem;
+.separate {
+    height: 1vh;
+    background-color: black;
+}
+
+.ter {
+    color: limegreen;
 }
