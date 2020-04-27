@@ -7,6 +7,13 @@ $destinationTime = new DateTimeImmutable("2015-10-21 10:30");
 
 $timeInterval = $presentTime->diff($destinationTime);
 
+$timeIntervalMinutes = (($timeInterval->format("%a")) * 24 * 60) + ($timeInterval->h * 60) + $timeInterval->i;
+
+function quantityNeeded(float $nbMinutes): float
+{
+    return round($nbMinutes / 10000, 2);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -120,6 +127,8 @@ $timeInterval = $presentTime->diff($destinationTime);
 
 <div style="font-size: 2em">
     Il y a <?= $timeInterval->y;?> années, <?= $timeInterval->m;?> mois, <?= $timeInterval->d;?> jours, <?= $timeInterval->h;?> heures et <?= $timeInterval->i;?> minutes qui séparent ces deux dates !
+
+    On a donc besoin de <?= quantityNeeded($timeIntervalMinutes);?>L de carburant pour effectuer ce voyage. Allons voler l'almanach Marty ! xD
 </div>
 
 </body>
